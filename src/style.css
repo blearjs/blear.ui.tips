@@ -1,0 +1,24 @@
+.dkui-tips {
+  border-radius: 0 0 6px 6px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 13px 26px;
+  color: #fff;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-wrap: break-word;
+  width: 90%;
+  min-width: 300px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto; }
+  .dkui-tips_default {
+    background: #444; }
+  .dkui-tips_success {
+    background: #27c24c; }
+  .dkui-tips_danger {
+    background: #f05050; }
+  .dkui-tips_info {
+    background: #23b7e5; }
+  .dkui-tips_warn {
+    background: #FFC107; }

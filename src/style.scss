@@ -1,0 +1,41 @@
+$default-background: #444;
+$success-background: #27c24c;
+$danger-background: #f05050;
+$info-background: #23b7e5;
+$warn-background: #FFC107;
+
+.dkui-tips {
+  border-radius: 0 0 6px 6px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 13px 26px;
+  color: #fff;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-wrap: break-word;
+  width: 90%;
+  min-width: 300px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &_default {
+    background: $default-background;
+  }
+
+  &_success {
+    background: $success-background;
+  }
+
+  &_danger {
+    background: $danger-background;
+  }
+
+  &_info {
+    background: $info-background;
+  }
+
+  &_warn {
+    background: $warn-background;
+  }
+}

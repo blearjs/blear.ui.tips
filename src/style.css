@@ -1,4 +1,4 @@
-.dkui-tips {
+.blearui-tips {
   border-radius: 0 0 6px 6px;
   font-size: 16px;
   line-height: 24px;
@@ -12,13 +12,13 @@
   max-width: 500px;
   margin-left: auto;
   margin-right: auto; }
-  .dkui-tips_default {
+  .blearui-tips_default {
     background: #444; }
-  .dkui-tips_success {
+  .blearui-tips_success {
     background: #27c24c; }
-  .dkui-tips_danger {
+  .blearui-tips_danger {
     background: #f05050; }
-  .dkui-tips_info {
+  .blearui-tips_info {
     background: #23b7e5; }
-  .dkui-tips_warn {
+  .blearui-tips_warn {
     background: #FFC107; }

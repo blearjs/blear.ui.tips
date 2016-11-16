@@ -1,6 +1,6 @@
 {
   "name": "blear.ui.tips",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "顶部提示 UI",
   "scripts": {
     "live": "browser-sync start --config bs-config.js"
@@ -42,7 +42,7 @@
     "blear.core.attribute": "1.x"
   },
   "devDependencies": {
-
+    "coolie.js": "^2.0.21"
   },
   "license": "MIT"
 }

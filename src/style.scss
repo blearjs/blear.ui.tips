@@ -5,37 +5,38 @@ $info-background: #23b7e5;
 $warn-background: #FFC107;
 
 .blearui-tips {
-  border-radius: 0 0 6px 6px;
-  font-size: 16px;
-  line-height: 24px;
-  padding: 13px 26px;
-  color: #fff;
-  -ms-word-break: break-all;
-  word-break: break-all;
-  word-wrap: break-word;
-  width: 90%;
-  min-width: 300px;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 
-  &_default {
-    background: $default-background;
-  }
+  &-inner {
+    display: inline-block;
+    border-radius: 0 0 6px 6px;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 10px 17px;
+    color: #fff;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-wrap: break-word;
+    max-width: 300px;
 
-  &_success {
-    background: $success-background;
-  }
+    &_default {
+      background: $default-background;
+    }
 
-  &_danger {
-    background: $danger-background;
-  }
+    &_success {
+      background: $success-background;
+    }
 
-  &_info {
-    background: $info-background;
-  }
+    &_danger {
+      background: $danger-background;
+    }
 
-  &_warn {
-    background: $warn-background;
+    &_info {
+      background: $info-background;
+    }
+
+    &_warn {
+      background: $warn-background;
+    }
   }
 }

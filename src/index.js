@@ -13,9 +13,12 @@ var Popup =     require('blear.ui.popup');
 var object =    require('blear.utils.object');
 var Animation = require('blear.classes.animation');
 var attribute = require('blear.core.attribute');
+var Template =  require('blear.classes.template');
 
 var namespace = UI.UI_CLASS + '-tips';
+var tpl = new Template(require('./template.html'));
 var defaults = {
+    // 内置 default、success、danger、info、warn
     type: 'default',
     addClass: '',
     message: '',
@@ -84,18 +87,21 @@ var Tips = Popup.extend({
             height: 'auto',
             top: 0,
             bottom: 'auto',
+            template: tpl.render({
+                options: options
+            }),
             openAnimation: options.openAnimation,
             closeAnimation: options.closeAnimation
         });
 
-        // init node
-        var className = [
-            namespace,
-            namespace + '_' + options.type,
-            options.addClass
-        ].join(' ');
-        var html = '<div class="' + className + '">' + options.message + '</div>';
-        Tips.parent.setHTML(the, html);
+        // // init node
+        // var className = [
+        //     namespace,
+        //     namespace + '_' + options.type,
+        //     options.addClass
+        // ].join(' ');
+        // var html = '<div class="' + className + '">' + options.message + '</div>';
+        // Tips.parent.setHTML(the, html);
 
         // init event
         var timeout = options.timeout;

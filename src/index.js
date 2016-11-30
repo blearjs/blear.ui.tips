@@ -94,15 +94,6 @@ var Tips = Popup.extend({
             closeAnimation: options.closeAnimation
         });
 
-        // // init node
-        // var className = [
-        //     namespace,
-        //     namespace + '_' + options.type,
-        //     options.addClass
-        // ].join(' ');
-        // var html = '<div class="' + className + '">' + options.message + '</div>';
-        // Tips.parent.setHTML(the, html);
-
         // init event
         var timeout = options.timeout;
 
@@ -124,7 +115,7 @@ var Tips = Popup.extend({
         var the = this;
 
         clearTimeout(the[_timeId]);
-        Tips.parent.destroy(the);
+        Tips.invoke('destroy', the);
     }
 });
 var _timeId = Tips.sole();

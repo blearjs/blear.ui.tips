@@ -1,6 +1,6 @@
 {
   "name": "blear.ui.tips",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "顶部提示 UI",
   "scripts": {
     "live": "browser-sync start --config bs-config.js"
@@ -33,14 +33,14 @@
   "bugs": {
     "url": "https://github.com/blearjs/blear.ui.tips/issues"
   },
-  "dependencies": {},
-  "peerDependencies": {
+  "dependencies": {
     "blear.ui": "1.x",
     "blear.ui.popup": "1.x",
     "blear.utils.object": "1.x",
     "blear.classes.animation": "1.x",
     "blear.core.attribute": "1.x"
   },
+  "peerDependencies": {},
   "devDependencies": {
     "coolie.js": "^2.0.21"
   },

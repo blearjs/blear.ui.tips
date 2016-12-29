@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "blear.ui": "1.x",
-    "blear.ui.popup": "1.x",
+    "blear.ui.window": "1.x",
     "blear.utils.object": "1.x",
     "blear.classes.animation": "1.x",
     "blear.core.attribute": "1.x"

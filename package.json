@@ -1,6 +1,6 @@
 {
   "name": "blear.ui.tips",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "顶部提示 UI",
   "scripts": {
     "live": "browser-sync start --config bs-config.js"
@@ -38,6 +38,7 @@
     "blear.ui.popup": "1.x",
     "blear.utils.object": "1.x",
     "blear.classes.animation": "1.x",
+    "blear.classes.template": "1.x",
     "blear.core.attribute": "1.x"
   },
   "peerDependencies": {},

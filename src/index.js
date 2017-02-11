@@ -2,6 +2,7 @@
  * ui/Tips
  * @author ydr.me
  * @create 2016-04-26 19:20
+ * @update 2017年02月11日11:06:57
  */
 
 
@@ -15,7 +16,6 @@ var Animation = require('blear.classes.animation');
 var attribute = require('blear.core.attribute');
 var Template =  require('blear.classes.template');
 
-var namespace = UI.UI_CLASS + '-tips';
 var tpl = new Template(require('./template.html'));
 var defaults = {
     // 内置 default、success、danger、info、warn
@@ -83,7 +83,7 @@ var Tips = Popup.extend({
 
         options = object.assign(true, {}, defaults, options);
         Tips.parent(the, {
-            mask: false,
+            maskOptions: false,
             height: 'auto',
             top: 0,
             bottom: 'auto',

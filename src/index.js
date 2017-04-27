@@ -9,7 +9,6 @@
 
 'use strict';
 
-var UI =        require('blear.ui');
 var Popup =     require('blear.ui.popup');
 var object =    require('blear.utils.object');
 var Animation = require('blear.classes.animation');

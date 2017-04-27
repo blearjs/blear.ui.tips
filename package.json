@@ -1,6 +1,6 @@
 {
   "name": "blear.ui.tips",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "顶部提示 UI",
   "scripts": {
     "live": "browser-sync start --config bs-config.js"
@@ -8,7 +8,7 @@
   "preferGlobal": false,
   "bin": {},
   "engines": {
-    "node": ">=1.0.0",
+    "node": ">=6.0.0",
     "iojs": ">=1.0.0"
   },
   "main": "src/index.js",
@@ -34,7 +34,6 @@
     "url": "https://github.com/blearjs/blear.ui.tips/issues"
   },
   "dependencies": {
-    "blear.ui": "1.x",
     "blear.ui.popup": "1.x",
     "blear.utils.object": "1.x",
     "blear.classes.animation": "1.x",

@@ -18,7 +18,7 @@ var warnEl = document.getElementById('warn');
 defaultEl.onclick = function () {
     new Tips({
         type: 'default',
-        message: 'default'
+        message: '你的会员权限已到期'
     }).open();
 };
 

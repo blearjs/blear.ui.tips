@@ -21,7 +21,7 @@ var defaults = {
     type: 'default',
     addClass: '',
     message: '',
-    timeout: 5000,
+    timeout: 1500,
     /**
      * 打开窗口的动画
      * @type Null|Function

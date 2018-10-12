@@ -6,37 +6,34 @@ $warn-background: #FFC107;
 
 .blearui-tips {
   text-align: center;
+  display: inline-block;
+  border-radius: 0 0 6px 6px;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 10px 17px;
+  color: #fff;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-wrap: break-word;
+  max-width: 300px;
 
-  &-inner {
-    display: inline-block;
-    border-radius: 0 0 6px 6px;
-    font-size: 16px;
-    line-height: 1.6;
-    padding: 10px 17px;
-    color: #fff;
-    -ms-word-break: break-all;
-    word-break: break-all;
-    word-wrap: break-word;
-    max-width: 300px;
+  &_default {
+    background: $default-background;
+  }
 
-    &_default {
-      background: $default-background;
-    }
+  &_success {
+    background: $success-background;
+  }
 
-    &_success {
-      background: $success-background;
-    }
+  &_danger {
+    background: $danger-background;
+  }
 
-    &_danger {
-      background: $danger-background;
-    }
+  &_info {
+    background: $info-background;
+  }
 
-    &_info {
-      background: $info-background;
-    }
-
-    &_warn {
-      background: $warn-background;
-    }
+  &_warn {
+    background: $warn-background;
   }
 }

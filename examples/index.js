@@ -25,21 +25,21 @@ defaultEl.onclick = function () {
 successEl.onclick = function () {
     new Tips({
         type: 'success',
-        message: 'success'
+        message: '恭喜你成功的向作者转账了￥1000.00。'
     }).open();
 };
 
 dangerEl.onclick = function () {
     new Tips({
         type: 'danger',
-        message: 'danger'
+        message: '你可能需要注意一下你身后的东西！'
     }).open();
 };
 
 infoEl.onclick = function () {
     new Tips({
         type: 'info',
-        message: 'info'
+        message: '开车不喝酒，喝酒不开车！'
     }).open();
 };
 

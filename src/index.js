@@ -9,19 +9,19 @@
 
 'use strict';
 
-var Popup =     require('blear.ui.popup');
-var object =    require('blear.utils.object');
+var Window = require('blear.ui.window');
+var object = require('blear.utils.object');
 var Animation = require('blear.classes.animation');
 var attribute = require('blear.core.attribute');
-var Template =  require('blear.classes.template');
+var Template = require('blear.classes.template');
 
 var tpl = new Template(require('./template.html'));
-var defaults = {
+var defaults = object.assign({}, Window.defaults, {
     // 内置 default、success、danger、info、warn
     type: 'default',
     addClass: '',
     message: '',
-    timeout: 1500,
+    timeout: 15000000000,
     /**
      * 打开窗口的动画
      * @type Null|Function
@@ -74,26 +74,19 @@ var defaults = {
         an.start(done);
         an.destroy();
     }
-};
-var Tips = Popup.extend({
+});
+var Tips = Window.extend({
     className: 'Tips',
     constructor: function (options) {
         var the = this;
 
-        options = object.assign(true, {}, defaults, options);
-        Tips.parent(the, {
-            maskOptions: false,
-            height: 'auto',
-            top: 0,
-            bottom: 'auto',
-            template: tpl.render({
-                options: options
-            }),
-            openAnimation: options.openAnimation,
-            closeAnimation: options.closeAnimation
-        });
+        options = object.assign({}, defaults, options);
+        options.width = 'auto';
+        Tips.parent(the, options);
+        the.setHTML(tpl.render({
+            options: options
+        }));
 
-        // init event
         var timeout = options.timeout;
 
         the.on('afterOpen', function () {

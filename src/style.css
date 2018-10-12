@@ -1,23 +1,22 @@
 .blearui-tips {
-  text-align: center; }
-  .blearui-tips-inner {
-    display: inline-block;
-    border-radius: 0 0 6px 6px;
-    font-size: 16px;
-    line-height: 1.6;
-    padding: 10px 17px;
-    color: #fff;
-    -ms-word-break: break-all;
-    word-break: break-all;
-    word-wrap: break-word;
-    max-width: 300px; }
-    .blearui-tips-inner_default {
-      background: #444; }
-    .blearui-tips-inner_success {
-      background: #27c24c; }
-    .blearui-tips-inner_danger {
-      background: #f05050; }
-    .blearui-tips-inner_info {
-      background: #23b7e5; }
-    .blearui-tips-inner_warn {
-      background: #FFC107; }
+  text-align: center;
+  display: inline-block;
+  border-radius: 0 0 6px 6px;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 10px 17px;
+  color: #fff;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-wrap: break-word;
+  max-width: 300px; }
+  .blearui-tips_default {
+    background: #444; }
+  .blearui-tips_success {
+    background: #27c24c; }
+  .blearui-tips_danger {
+    background: #f05050; }
+  .blearui-tips_info {
+    background: #23b7e5; }
+  .blearui-tips_warn {
+    background: #FFC107; }

@@ -1,7 +1,7 @@
 {
   "name": "blear.ui.tips",
   "version": "1.0.9",
-  "description": "顶部提示 UI",
+  "description": "非全局模式提示 UI",
   "scripts": {
     "live": "browser-sync start --config bs-config.js"
   },

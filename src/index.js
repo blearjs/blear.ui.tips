@@ -13,6 +13,7 @@ var Window = require('blear.ui.window');
 var object = require('blear.utils.object');
 var Animation = require('blear.classes.animation');
 var attribute = require('blear.core.attribute');
+var event = require('blear.core.event');
 var Template = require('blear.classes.template');
 
 var tpl = new Template(require('./template.html'));
@@ -21,7 +22,7 @@ var defaults = object.assign({}, Window.defaults, {
     type: 'default',
     addClass: '',
     message: '',
-    timeout: 15000000000,
+    timeout: 2345,
     /**
      * 打开窗口的动画
      * @type Null|Function
@@ -32,16 +33,18 @@ var defaults = object.assign({}, Window.defaults, {
 
         attribute.style(el, {
             display: 'block',
+            opacity: 0,
             transform: {
-                translateY: '-100%'
+                scale: 0
             }
         });
 
+        to.opacity = 1;
         to.transform = {
-            translateY: 0
+            scale: 1
         };
         an.transit(to, {
-            duration: 234,
+            duration: 345,
             easing: 'in-out'
         });
         an.start(done);
@@ -58,17 +61,15 @@ var defaults = object.assign({}, Window.defaults, {
         var an = new Animation(el);
 
         attribute.style(el, {
-            display: 'block',
-            transform: {
-                translateY: 0
-            }
+            display: 'block'
         });
 
+        to.opacity = 0;
         to.transform = {
-            translateY: '-100%'
+            scale: 0
         };
         an.transit(to, {
-            duration: 234,
+            duration: 345,
             easing: 'in-out'
         });
         an.start(done);
@@ -97,6 +98,10 @@ var Tips = Window.extend({
                     the.close();
                 }, timeout);
             }
+        });
+        event.on(the.getWindowEl(), 'click', function () {
+            clearTimeout(the[_timeId]);
+            the.close();
         });
     },
 

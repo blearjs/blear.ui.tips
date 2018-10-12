@@ -37,6 +37,7 @@
     "blear.classes.animation": "1.x",
     "blear.classes.template": "^2.1.2",
     "blear.core.attribute": "1.x",
+    "blear.core.event": "^1.1.5",
     "blear.ui.window": "^1.1.34",
     "blear.utils.object": "1.x"
   },

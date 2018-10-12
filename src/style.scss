@@ -1,15 +1,16 @@
-$default-background: #444;
-$success-background: #27c24c;
-$danger-background: #f05050;
-$info-background: #23b7e5;
-$warn-background: #FFC107;
+$default-background: #222;
+$success-background: #0d940b;
+$danger-background: #ab0707;
+$info-background: #0f5dbd;
+$warn-background: #bd7914;
+$opacity: 1;
 
 .blearui-tips {
   text-align: center;
   display: inline-block;
-  border-radius: 0 0 6px 6px;
-  font-size: 16px;
-  line-height: 1.6;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.5;
   padding: 10px 17px;
   color: #fff;
   -ms-word-break: break-all;
@@ -18,22 +19,27 @@ $warn-background: #FFC107;
   max-width: 300px;
 
   &_default {
-    background: $default-background;
+    background: rgba($default-background, $opacity);
+    box-shadow: 0 0 50px 0 $default-background;
   }
 
   &_success {
-    background: $success-background;
+    background: rgba($success-background, $opacity);
+    box-shadow: 0 0 50px 0 $success-background;
   }
 
   &_danger {
-    background: $danger-background;
+    background: rgba($danger-background, $opacity);
+    box-shadow: 0 0 50px 0 $danger-background;
   }
 
   &_info {
-    background: $info-background;
+    background: rgba($info-background, $opacity);
+    box-shadow: 0 0 50px 0 $info-background;
   }
 
   &_warn {
-    background: $warn-background;
+    background: rgba($warn-background, $opacity);
+    box-shadow: 0 0 50px 0 $warn-background;
   }
 }

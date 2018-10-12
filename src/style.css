@@ -1,9 +1,9 @@
 .blearui-tips {
   text-align: center;
   display: inline-block;
-  border-radius: 0 0 6px 6px;
-  font-size: 16px;
-  line-height: 1.6;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.5;
   padding: 10px 17px;
   color: #fff;
   -ms-word-break: break-all;
@@ -11,12 +11,17 @@
   word-wrap: break-word;
   max-width: 300px; }
   .blearui-tips_default {
-    background: #444; }
+    background: #222222;
+    box-shadow: 0 0 50px 0 #222; }
   .blearui-tips_success {
-    background: #27c24c; }
+    background: #0d940b;
+    box-shadow: 0 0 50px 0 #0d940b; }
   .blearui-tips_danger {
-    background: #f05050; }
+    background: #ab0707;
+    box-shadow: 0 0 50px 0 #ab0707; }
   .blearui-tips_info {
-    background: #23b7e5; }
+    background: #0f5dbd;
+    box-shadow: 0 0 50px 0 #0f5dbd; }
   .blearui-tips_warn {
-    background: #FFC107; }
+    background: #bd7914;
+    box-shadow: 0 0 50px 0 #bd7914; }

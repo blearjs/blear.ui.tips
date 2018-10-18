@@ -1,6 +1,6 @@
 {
   "name": "blear.ui.tips",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "非模态模式提示 UI",
   "scripts": {
     "live": "browser-sync start --config bs-config.js"

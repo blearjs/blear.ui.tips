@@ -11,17 +11,17 @@
   word-wrap: break-word;
   max-width: 300px; }
   .blearui-tips_default {
-    background: rgba(34, 34, 34, 0.95);
+    background: #222222;
     box-shadow: 0 0 50px 0 #222; }
   .blearui-tips_success {
-    background: rgba(16, 115, 9, 0.95);
-    box-shadow: 0 0 50px 0 #107309; }
+    background: #00a202;
+    box-shadow: 0 0 50px 0 #00a202; }
   .blearui-tips_danger {
-    background: rgba(171, 7, 7, 0.95);
+    background: #ab0707;
     box-shadow: 0 0 50px 0 #ab0707; }
   .blearui-tips_info {
-    background: rgba(15, 93, 189, 0.95);
+    background: #0f5dbd;
     box-shadow: 0 0 50px 0 #0f5dbd; }
   .blearui-tips_warn {
-    background: rgba(189, 121, 20, 0.95);
+    background: #bd7914;
     box-shadow: 0 0 50px 0 #bd7914; }
